@@ -284,7 +284,7 @@ Bu kapsamlı veri seti, Türkçe doğal dil işleme alanında çalışan araşt�
 
 ## 🤝 Katkıda Bulunma
 
-Projeye katkıda bulunmak isterseniz, lütfen önce [CONTRIBUTING](CONTRIBUTING.md.py) dosyamızı kontrol edin.
+Projeye katkıda bulunmak isterseniz, lütfen önce [CONTRIBUTING](CONTRIBUTING.md) dosyamızı kontrol edin.
 
 
 ## 📄 Lisans
