@@ -5,11 +5,11 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/technoturk)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest)
 
 ## 📊 Proje Tanımı
 
-Türkiye'nin en büyük teknoloji forumu Technopat'tan kazınmış, tamamen Türkçe ve açık kaynaklı en büyük veri setidir. 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
+Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
 
 ## 🌟 Neden zynpdata?
 
@@ -160,7 +160,12 @@ Veri formatlama aşamasında, JSON formatındaki verilerin JSONL formatına dön
 
 ### 1. Genel Bakış
 
-zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan elde edilmiş, geniş kapsamlı bir Türkçe veri setidir. Bu veri seti, doğal dil işleme, makine öğrenimi ve yapay zeka araştırmaları için zengin bir kaynak sunmaktadır.Özelikle türkçe llm model üretimi ve finetuning edilmesinde eşssiz bir kaynak sağlar.
+zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan elde edilmiş, geniş kapsamlı bir Türkçe veri setidir. Bu veri seti, doğal dil işleme, makine öğrenimi ve yapay zeka araştırmaları için zengin bir kaynak sunmaktadır.Özelikle türkçe llm model üretimi ve finetuning edilmesinde eşssiz bir kaynak sağlar.Veri seti her konu için toplam 5 adet veri başlığı içermektedir:
+- Soru : Kullanıcın konu başlığında yazdığı metin buraya geliyor.
+- Url : Konunun url'si buraya geliyor.
+- Ayrıntılı Soru : Kullanıcının başlığı yazdıktan sonra konuya attığı ayrıntılı soru mesajı buraya geliyor.
+- Cevaplar : Konuya verilmiş tüm cevaplar bu kısıma geliyor.
+- Atıf : Veri seti ile ilgili atıf buraya geliyor.
 
 ### 2. Boyut Ve Genel İstatistikler
 
@@ -266,15 +271,15 @@ Bu kapsamlı veri seti, Türkçe doğal dil işleme alanında çalışan araşt�
 
 ## Kaynaklar
 
-https://medium.com/kaveai/web-scraping-453e96a86195
-https://www.sinanerdinc.com/python-beautifulsoup-modulu
-https://furkancakmaker.medium.com/python-ile-web-scraping-beautifulsoup-kullan%C4%B1m%C4%B1-5f0a3d88f5
-https://yazilimtoplulugu.com/blog/2397-requests-ve-beautifulsoup-modullleriyle-internetten-veri-cekme
-https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
-https://www.freecodecamp.org/news/how-to-use-the-json-module-in-python/
-https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/
-https://www.datacamp.com/tutorial/python-multiprocessing-tutorial
-https://stackoverflow.com/questions/57071390/create-jsonl-with-python
+* [Python ile Veri Kazıma(Web Scraping) Çalışması Medium](https://medium.com/kaveai/web-scraping-453e96a86195)
+* [Python BeautifulSoup Modülü Sinan Erdinç](https://www.sinanerdinc.com/python-beautifulsoup-modulu)
+* [Python ile Web Scraping: BeautifulSoup Kullanımı Medium](https://furkancakmaker.medium.com/python-ile-web-scraping-beautifulsoup-kullan%C4%B1m%C4%B1-5f0a3d88f)
+* [Requests Ve Beauti̇fulsoup Modüllleri̇yle İnternetten Veri̇ Çekme Yazılım Topluluğu](https://yazilimtoplulugu.com/blog/2397-requests-ve-beautifulsoup-modullleriyle-internetten-veri-cekme)
+* [Implementing Web Scraping in Python with BeautifulSoup GeeksforGeeks](https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/)
+* [How to Use the JSON Module in Python – A Beginner's Guide](https://www.freecodecamp.org/news/how-to-use-the-json-module-in-python/)
+* [How to Create a Telegram Bot using Python](https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/)
+* [Python Multiprocessing Tutorial](https://www.datacamp.com/tutorial/python-multiprocessing-tutorial)
+* [Create JSONL with Python](https://stackoverflow.com/questions/57071390/create-jsonl-with-python)
 
 
 ## 🤝 Katkıda Bulunma
