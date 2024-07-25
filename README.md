@@ -1,7 +1,7 @@
 
 # 🚀 zynpdata-zynp_ai-teknofest: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Veri Seti
 
-![zynpdata Logo](https://i.imgur.com/vg1ulFl.jpg)
+<img src="https://i.imgur.com/1JQlntm.jpg" alt="zynpdata-zynp_ai-teknofest" width="200" height="200">
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
