@@ -32,19 +32,111 @@ Türkiye'nin en büyük teknoloji forumu Technopat'tan kazınmış, tamamen Tür
  örnek.com
 
 ## 📈 Proje Aşamaları
-### Proje 3 aşamadan oluşmaktadır, *link toplama*, *içerik kazıma*, *format düzeltme*:
+### Proje 3 aşamadan oluşmaktadır, *link toplama*, *İçerik Toplama*, *format düzeltme*:
 
-**1. Link Toplama:**
+## 1. Link Toplama
 
-Sitenin sitemapından tüm konuların linklerinini indirdik, artık elimizde forumda açılmış tüm konuların linkleri vardı.Ama şöyle bir sorunumuz vardı, tüm konuların linkleri elimizde olmasına rağmen her konu 1 sayfadan oluşmuyordu hatta çoğu konu bir kaç sayfa veya daha fazla sayfadan oluşuyordu.Bu sayfaların linklerinide toplamamız gerekiyordu, bunun için aklımıza ilk gelen yöntem forumun konu sayfasında bulununan sayfaların linkleri web parse ederek toplamak ana link ile birlikte kaydetmekti.Hemen bu yöntem ile ilgili bir script yazdık ve test etmeye başladık.Scritpin geneli beklediğimiz gibi çalışıyordu tek beklediğimiz gibi çalışmayan kısmı parsing işlemi intel 16 çekirdek işlemci ile çalışmamıza rağmen oldukça uzun sürüyordu.Bu yöntem bizi süre açısından oldukça fazla kısıtlayacağı için bu yöntemden vazgeçmek zorunda kaldık.Hemen derin bir düşünme sürecine girdik.Bir süre sonra aklımıza yeni bir fikir geldi:Forumun forumun konu sayfasında mesaj sayısını çekip buna dayanarak konunun kaç sayfa olduğunu hesaplayıp bundan sonrada buna dayanarak linkleri oluşturan bir script yazdık.Scriptin son haline burdan ulaşabilirsiniz [Link Toplama Scripti](linktoplama.py).Bu script tam beklediğimiz gibi çalıştı, mesaj sayısını html verisinden çekip urllleri oluşturup kaydediyordu.Link toplama aşamasında bizi en çok zorlayan 2 problem ile karşılaştık bunlar şunlardı: Forumunun serveri nin bu kadar trafiği kaldırramayıp arada 501 hataları vermesi bazı urlleri baştan yapmak zorunda kaldık.Karşılaştığımız 2 sorun cloudflare ben robot değilim doğrulaması idi aynı ip den istek yaptığımız için genelde 12 saat bir 8 saat boyunca siteye erişebilmek için cloudflare doğrulamasını yapmadan siteye erişemiyorduk, bizi ortalama her 12 saatte bir 8 saat ara vermemiz gerekiyorduk.Link toplama aşaması toplam 1 hafta sürdü ve yaklaşık 4.5 milyon link elimizdeydi ondan sonra içerik toplama aşamasında geçtik.
+Bu kısım, geniş kapsamlı bir web forumundan link toplama sürecini, karşılaşılan zorlukları ve geliştirilen çözüm stratejilerini detaylı bir şekilde incelemektedir. Çalışmanın temel amacı, forumda yer alan tüm konuların ve ilgili sayfa linklerinin eksiksiz bir şekilde toplanmasıdır. Bu süreçte karşılaşılan teknik ve operasyonel engeller, uygulanan yöntemler ve elde edilen sonuçlar ayrıntılı olarak ele alınmaktadır.
 
-**2. İçerik Toplama:** 
 
-1.Aşamada topladığımız 4.5 milyon linki işlemek için doğru bir script yazmalıydık, hemen düşünme aşamasına geçtik.Uzun bir düşünme aşamadından geçtikten sonra beautifulsoup kütüphanesi ve kullanarak forumun konu sayfasından ilk olarak en üstte bulunan soru verisini çekip json veri değişkenimize eklemeden önce daha önce bu soru eklenmiş mi diye kontrol edip eğer varsa direkt cevap çekme aşamasına geçmemizi sağlayan bir scirpt yazdık eğer soru daha önce eklenmemişse soruyu jsona ekliyip ayrıntılı soru çekme kısmına geçmemiizi sağlıyordu.Ayrıntılı soru olarak kullanıcının mesajlar kısmında yazdığı ilk mesajı alıyoruz ve json verimize ekliyoruz.Ayrıntılı mesaj dan sonra cevapları sayfadan çekip onlarıda json verimize ekliyorduk.Geriye sadece sayfanın linkini ve atıfı ekleyip kalıyordu.Bu işlemi sciript topladığımız tüm linklere yaptı.Scriptin son haline burdan ulaşabilirsiniz [İçerik Toplama Scripti](iceriktoplama.py).Bu işlemde yaklaşık 2 hafta sürdü bu kadar uzun sürmesinin sebebi yine link toplama aşamsında karşılaştığımız sorunlarla aynı idi bu yüzden oldukça uzun sayılabilicek bir içerik toplama süreci geçirdik, ama sonucunda türkiyenin en büyük açık kaynaklı ve türkçe veri setini oluşturmuş olduk. 
 
-**3. Veri Formatlama:** 
+### İlk Aşama: URL Toplama
+Veri toplama sürecinin ilk aşamasında, hedef web sitesinin sitemap'i kullanılarak tüm konu başlıklarının URL'leri elde edilmiştir. Bu yaklaşım, forumda açılmış olan tüm konuların ana sayfalarına erişim sağlamıştır. Ancak, her konunun potansiyel olarak birden fazla sayfadan oluşması, veri toplama sürecini daha karmaşık hale getirmiştir.
 
-2.Aşamada toplanan verilerin kullanımını daha kolaylaştrmak ufak bir script kullanarak json verisini jsonl formatına çevirdik.
+### İlk Yaklaşım: Web Parsing Yöntemi
+İlk olarak, her konu sayfasındaki sayfa bağlantılarının web parsing yöntemi ile toplanması düşünülmüştür. Bu amaçla geliştirilen script şu işlevleri yerine getirmeyi hedeflemiştir:
+
+- Konu sayfalarını analiz etme
+- Sayfa numaralarını tespit etme
+- İlgili tüm sayfa URL'lerini çıkarma ve kaydetme
+
+Bu yaklaşım, işlevsel olmasına rağmen, yüksek işlemci gücüne (16 çekirdekli Intel işlemci) rağmen beklenenden çok daha uzun süre almıştır. Parsing işleminin yoğun kaynak kullanımı ve zaman alıcı doğası, bu yöntemin büyük ölçekli veri toplama için uygun olmadığını göstermiştir.
+
+### Alternatif Yaklaşım: Mesaj Sayısı Bazlı URL Oluşturma
+Zaman kısıtlamaları ve verimsizlik nedeniyle, daha etkili bir yöntem geliştirme ihtiyacı doğmuştur. Bu doğrultuda yeni bir strateji oluşturulmuştur:
+
+- Her konu sayfasındaki toplam mesaj sayısının çekilmesi
+- Mesaj sayısına dayanarak toplam sayfa sayısının hesaplanması
+- Hesaplanan sayfa sayısına göre URL'lerin programatik olarak oluşturulması
+
+Bu yaklaşım için özel bir script geliştirilmiştir. Script'in temel işlevleri şunlardır:
+
+- HTML verisinden mesaj sayısını çekme
+- Sayfa sayısını hesaplama
+- URL'leri oluşturma ve kaydetme
+
+Geliştirilen script'e [Link Toplama Scripti](linktoplama.py) adresinden erişilebilmektedir.
+
+### Karşılaşılan Zorluklar ve Çözümler
+
+Veri toplama sürecinde iki temel zorlukla karşılaşılmıştır:
+
+### Sunucu Kapasitesi Sınırlamaları
+- Problem: Forum sunucusu, yoğun veri toplama trafiği nedeniyle zaman zaman 501 hataları vermiştir.
+- Çözüm: Hata alınan URL'ler kaydedilmiş ve daha sonra yeniden işlenmiştir. Bu yaklaşım, veri kaybını önlemiş ancak toplam işlem süresini uzatmıştır.
+
+### Güvenlik Önlemleri: Cloudflare Doğrulaması
+- Problem: Sürekli aynı IP adresinden yapılan istekler nedeniyle Cloudflare'ın "ben robot değilim" doğrulaması devreye girmiştir. Bu durum, yaklaşık her 12 saatlik çalışma periyodunun ardından 8 saatlik bir erişim engeli oluşturmuştur.
+- Çözüm: Veri toplama süreci, bu kısıtlamayı dikkate alacak şekilde planlanmıştır. 12 saat aktif çalışma ve 8 saat bekleme şeklinde bir döngü oluşturulmuştur. Bu yaklaşım, sürecin verimliliğini düşürmüş ancak uzun vadeli veri toplama imkanı sağlamıştır.
+
+### Sonuçlar ve Analiz
+
+Link toplama aşaması toplam bir hafta sürmüştür. Bu süreç sonunda yaklaşık 4.5 milyon URL başarıyla elde edilmiştir.
+
+
+## 2. İçerik Toplama: 
+
+### 1. Giriş ve Planlama
+
+Bu çalışmanın ilk aşamasında, elimizde bulunan 4.5 milyon linki verimli bir şekilde işlemek için doğru bir script geliştirilmesi gerekti. Bu amaçla, planlama süreci titizlikle yürütüldü. Planlama sürecinde, kullanılacak kütüphaneler ve veri çekme işleminin optimizasyonu üzerinde duruldu. Uzun süren düşünme ve analiz aşamasının ardından, BeautifulSoup kütüphanesini kullanarak forumların konu sayfalarındaki verileri çekme kararı alındı.
+
+### 2. Soru ve Cevapların İşlenmesi
+
+Geliştirilen scriptin temel işlevi, forum sayfasından ilk olarak en üstte bulunan soru verisini çekmek ve bu veriyi JSON formatında saklamaktı. Ancak, bu işlemi gerçekleştirmeden önce, sorunun daha önce eklenip eklenmediği kontrol edildi. Bu kontrol mekanizması, veri tekrarını önleyerek işlem verimliliğini artırdı. Eğer soru daha önce eklenmişse, script doğrudan cevap çekme aşamasına geçmektedir. Bu sayede, işlem süresi kısaltılarak daha hızlı ve verimli bir veri işleme süreci sağlanmıştır.
+
+### 3. Ayrıntılı Soru ve Cevapların Çekilmesi
+
+Script, yeni bir soru tespit edildiğinde, bu soruyu JSON formatında saklamakta ve ayrıntılı soru çekme işlemine geçmektedir. Ayrıntılı soru çekme işlemi, kullanıcının mesajlar kısmında yazdığı ilk mesajı almayı ve bu veriyi JSON formatındaki veri setine eklemeyi içermektedir. İlk mesajın ardından, forum sayfasında yer alan tüm cevaplar toplanmakta ve JSON verisine eklenmektedir. Bu aşama, forumlardaki tüm önemli verilerin kapsamlı bir şekilde toplanmasını sağlamaktadır.
+
+### 4. Link ve Atıf Bilgilerinin Eklenmesi
+
+Veri çekme işleminin sonunda, her bir veri kaynağına ait sayfanın linki ve atıf bilgileri JSON verisine eklenmektedir. Bu işlem, verilerin kaynağını belirlemek ve referansları doğru şekilde tutmak açısından büyük önem taşımaktadır. Böylece, oluşturulan veri setinin doğruluğu ve güvenilirliği artırılmaktadır.
+
+### 5. Scriptin Kullanımı ve Zaman Çizelgesi
+
+Geliştirilen script, topladığımız tüm linkler için veri çekme işlemini otomatik olarak gerçekleştirmektedir. Scriptin son haline şu bağlantıdan ulaşabilirsiniz: [İçerik Toplama Scripti](iceriktoplama.py). Bu işlemin tamamlanması yaklaşık iki hafta sürmüştür. Bu sürenin uzun olmasının temel sebebi, link toplama aşamasında karşılaşılan sorunlardır. Ancak, bu süreç sonucunda Türkiye'nin en büyük açık kaynaklı ve Türkçe veri seti oluşturulmuştur.
+
+### Sonuç
+
+Bu çalışma, geniş ölçekli bir veri toplama sürecinin detaylı bir incelemesini sunmaktadır. Geliştirilen script, forum sayfalarından veri çekme, veri işleme ve saklama süreçlerini otomatikleştirerek, verilerin doğru ve etkili bir şekilde toplanmasını sağlamıştır. Sonuç olarak, oluşturulan veri seti, çeşitli araştırmalar ve analizler için önemli bir kaynak teşkil etmektedir. Bu süreç, büyük veri işleme projeleri için bir model oluşturmakta ve veri toplama işlemlerinde karşılaşılan zorlukların nasıl aşılabileceğine dair önemli ipuçları sunmaktadır.
+
+## 3. Veri Formatlama:
+
+### 3.1. Veri Formatlama İhtiyacı
+
+Toplama aşamasında elde edilen verilerin işlenmesi ve analizi sırasında, JSON formatındaki verilerin daha etkili bir şekilde yönetilmesi ve kullanılabilmesi adına belirli bir formatlama sürecine ihtiyaç duyulmuştur. JSON formatı, verilerin saklanması ve taşınması için yaygın olarak kullanılan bir formattır. Ancak, büyük veri setleriyle çalışırken, JSONL (JSON Lines) formatı gibi alternatif formatlar daha uygun olabilir.
+
+### 3.2. JSON'dan JSONL'ye Dönüşüm
+
+Bu aşamada, JSON formatındaki verileri JSONL formatına dönüştüren küçük bir script geliştirilmiştir. JSONL formatı, her satırın bir JSON nesnesi olduğu bir yapıdır. Bu format, büyük veri setlerini daha verimli bir şekilde işlemek ve analiz etmek için tercih edilmektedir. JSONL formatı, verilerin satır bazında işlenmesini kolaylaştırır ve büyük veri dosyalarının yönetimini daha etkili hale getirir.
+
+#### 3.2.1. Scriptin İşlevi
+
+Geliştirilen script, JSON formatındaki verileri satır bazında JSONL formatına dönüştürmektedir. Bu süreç, aşağıdaki adımları içermektedir:
+
+1. **Veri Okuma:** JSON formatındaki veriler, script tarafından okunur ve hafızaya alınır.
+2. **Dönüşüm İşlemi:** Her bir JSON nesnesi, ayrı bir satıra yerleştirilir ve JSONL formatında yeniden yapılandırılır.
+3. **Veri Yazma:** JSONL formatındaki veriler, yeni bir dosyaya yazılır. Bu dosya, veri işleme ve analiz aşamalarında kullanılmak üzere hazır hale getirilir.
+
+#### 3.2.2. Dönüşümün Avantajları
+
+- **Performans Artışı:** JSONL formatı, büyük veri setlerinin daha hızlı ve verimli bir şekilde işlenmesini sağlar.
+- **Kolay Yönetim:** JSONL formatında her satır bağımsız bir JSON nesnesi olduğundan, veri setleri üzerinde arama ve filtreleme işlemleri daha hızlı gerçekleştirilebilir.
+- **Veri Akışları:** JSONL formatı, veri akışları ve veri işleme pipeline'ları ile uyumlu çalışarak, veri mühendisliği ve analiz süreçlerini kolaylaştırır.
+
+### 3.3. Sonuç
+
+Veri formatlama aşamasında, JSON formatındaki verilerin JSONL formatına dönüştürülmesi, veri yönetimi ve analizi süreçlerinde önemli bir iyileşme sağlamıştır. JSONL formatının sağladığı performans ve kullanım kolaylığı, büyük veri setlerinin etkili bir şekilde işlenmesini ve analiz edilmesini mümkün kılmıştır. Bu dönüşüm, veri setinin daha geniş uygulama alanlarına uyum sağlamasına ve veri işleme süreçlerinin optimizasyonuna katkıda bulunmuştur.
 
 
 **İçerik Örneği:**
