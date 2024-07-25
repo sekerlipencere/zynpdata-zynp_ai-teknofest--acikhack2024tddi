@@ -21,8 +21,8 @@ Türkiye'nin en büyük teknoloji forumu Technopat'tan kazınmış, tamamen Tür
 
 ## 💡 Kullanım Alanları
 
-- Türkçe Doğal Dil İşleme (NLP) modellerinin eğitimi
-- Dil modelleri (LLM) için fine-tuning
+- Türkçe Doğal Dil İşleme (NLP) modellerinin eğitimi:
+- Dil modelleri (LLM) için fine-tuning: Özellikle LLM modellerinin finetunungi için mükemmel doğrulukta saf bilgi sunar.Dil modelleri, doğal dil işleme (NLP) alanında büyük önem taşır ve çeşitli görevler için kullanılabilir. Fine-tuning, bu modellerin belirli bir veri kümesi üzerinde özelleştirilerek performanslarının artırılmasını sağlar. "zynpdata-zynp_ai-teknofest" veri seti, dil modellerinin fine-tuning işlemleri için mükemmel bir kaynak sunar.
 - Sentiment analizi ve konu modelleme çalışmaları
 - Türkçe soru-cevap sistemleri geliştirme
 - Sosyal ağ analizi ve kullanıcı davranışı araştırmaları
@@ -172,12 +172,23 @@ Veri seti, 2012 yılından 2024 yılına kadar olan forum içeriklerini kapsamak
 
 Bu kapsamlı veri seti, Türkçe doğal dil işleme alanında çalışan araştırmacılar ve geliştiriciler için benzersiz fırsatlar sunmaktadır.
 
+## Kaynaklar
 
+https://medium.com/kaveai/web-scraping-453e96a86195
+https://www.sinanerdinc.com/python-beautifulsoup-modulu
+https://furkancakmaker.medium.com/python-ile-web-scraping-beautifulsoup-kullan%C4%B1m%C4%B1-5f0a3d88f5
+https://yazilimtoplulugu.com/blog/2397-requests-ve-beautifulsoup-modullleriyle-internetten-veri-cekme
+https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+https://www.freecodecamp.org/news/how-to-use-the-json-module-in-python/
+https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/
+https://www.datacamp.com/tutorial/python-multiprocessing-tutorial
+https://stackoverflow.com/questions/57071390/create-jsonl-with-python
 
 
 ## 🤝 Katkıda Bulunma
 
-Projeye katkıda bulunmak isterseniz, lütfen önce [Link Toplama Scripti](linktoplama.py).
+Projeye katkıda bulunmak isterseniz, lütfen önce [CONTRIBUTING](CONTRIBUTING.md.py) dosyamızı kontrol edin.
+
 
 ## 📄 Lisans
 
@@ -200,7 +211,7 @@ Bu veri setini çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gib
 
 ## 📞 İletişim
 
-Sorularınız veya geri bildirimleriniz için lütfen [issues](https://github.com/yourusername/technoturk/issues) bölümünü kullanın veya [email@example.com](mailto:email@example.com) adresinden bize ulaşın.
+Sorularınız veya geri bildirimleriniz için lütfen [issues](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest/issues) bölümünü kullanın veya [yusufd.polar@gmail.com](mailto:yusufd.polar@gmail.com) adresinden bize ulaşın.
 
 ---
 
