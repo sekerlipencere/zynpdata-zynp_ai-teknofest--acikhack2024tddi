@@ -1,7 +1,7 @@
 
 # 🚀 zynpdata-zynp_ai-teknofest: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Veri Seti
 
-![TechnoTürk Logo](https://example.com/technoturk-logo.png)
+![zynpdata Logo](https://i.imgur.com/vg1ulFl.jpg)
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -80,11 +80,12 @@ zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan 
 | Toplam Dosya Boyutu | 7 GB |
 | Toplam Karakter Sayısı | 5,934,600,344 |
 
-#### Veri Setinin Tamamını İçeren Word Cloud
-![TechnoTürk Logo](https://example.com/technoturk-logo.png)
-
-#### Veri Setinin Tamamını İçeren Kelime Frekans Grafiği
-![TechnoTürk Logo](https://example.com/technoturk-logo.png)
+### Veri Setinin Tamamını İçeren Word Cloud
+![TechnoTürk Logo](https://i.imgur.com/LTO2EkH.png)
+---
+---
+### Veri Setinin Tamamını İçeren Kelime Frekans Grafiği
+![TechnoTürk Logo](https://i.imgur.com/H7P3BTc.png)
 
 
 ### 3. İçerik Türleri ve Kaynakları
@@ -187,13 +188,13 @@ Bu proje Apache 2.0 Lisansı altında lisanslanmıştır. Detaylar için [LICENS
 Bu veri setini çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gibi atıfta bulunun:
 
 ```
-@misc{zynpdata2023,
+@misc{zynpdata2024,
   author = {sekerlipencere},
   title = {zynpdata: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Forum Veri Seti},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/yourusername/technoturk}}
+  howpublished = {\url{https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest}}
 }
 ```
 
