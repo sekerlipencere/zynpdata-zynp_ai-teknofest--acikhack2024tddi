@@ -312,4 +312,4 @@ Sorularınız veya geri bildirimleriniz için lütfen [issues](https://github.co
 
 ---
 
-TechnoTürk ile NLP ve LLM çalışmalarınıza güç katın! 🚀🇹🇷
+zynpdata-zynp_ai-teknofest ile NLP ve LLM çalışmalarınıza güç katın! 🚀🇹🇷
