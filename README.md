@@ -29,7 +29,7 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 
 ## 🚀 Veri Setini İndirme
 
- örnek.com
+[![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://github.com/kullaniciadi/repo/releases/download/v1.0.0/dosya.zip)
 
 ## 📈 Proje Aşamaları
 ### Proje 3 aşamadan oluşmaktadır, *link toplama*, *İçerik Toplama*, *format düzeltme*:
