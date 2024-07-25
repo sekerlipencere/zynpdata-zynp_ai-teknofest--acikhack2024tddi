@@ -44,7 +44,24 @@ Sitenin sitemapından tüm konuların linklerinini indirdik, artık elimizde for
 
 **3. Veri Formatlama:** 
 
-2.Aşamada verilerin kullanımını daha kolaylaştrmak ufak bir script kullanarak json verisini jsonl verisine çevirdik.
+2.Aşamada toplanan verilerin kullanımını daha kolaylaştrmak ufak bir script kullanarak json verisini jsonl formatına çevirdik.
+
+
+**İçerik Örneği:**
+
+```json
+{
+  "soru": "CS:GO FPS nasıl arttırılır?",
+  "url": "https://www.technopat.net/sosyal/konu/cs-go-fps-nasil-arttirilir.1340872/page-2",
+  "ayrintili_soru": "kaonashii99 dedi:-Freq 144 -High -novid -Console -nosplash +cl_updaterate 128 +cl_cmdrate 128 +cl_interp 0 +Rate 128 +exec autoexec -lv +mat_queue_mode 2 +cl_forcepreload 1 -noforcemaatıfel -noforcemparms -noforcemspd(144 Hz monitör kullandığım için yazdım Hz değerine göre yazabilirsin bu kodu işine yarıyıcak başlatma seçenekleridir.)ParkControl – Tweak CPU Core Parking and Moreverdiğim linkten işlemcinin hızını maksimumda kullanabilirsin sorun yaratmaz işlemcinden alabiliceğin verimi almana yardım eder.Oyunun klasöründen oyununn exe dosyasını bulup özelliklerden uyumluluk sekmesinde tam ekran iyileştirmesini devre dışı bırak tikini seçin iyi bir FPS almanıza yardımcı olacaktır.800-600 de oynamanı öneririm bu arada 4.3 Black bar fark etmez.Konsoldan FPS Max 0 çekmeniz veriminizi daha artıracaktır.Genişletmek için tıkla...Sadece freq144'ümü monitör Hz'me göre ayarlayacagım?",
+  "cevaplar": [
+    "Hocam çoklu CPU kullanımını ayarlardan kapattıysanız aktif edince 4 5 FPS artar.",
+    "Evet sadece 144 ayarını 60 Hzdir büyük ihtimale monitörün 60 yazabilirsin.Fps_max 0 komutu.Ayarlardan ses ayarlarına gelip gelişmiş 3B ses işlemesi hayır yapıp.800-600 formatına çekip Black bar 4.3 boyutu fark etmez nasıl oynuyorsanız yapabilirsiniz.CS:GO görüntü ayarlarında Uber gölgelendirici kullan komutunu hayır yapmanız öneririm dikey eşitleme FPS'ini sabitler bundan dolayı yüksek FPS değerleri almana mani olur.Oyun açtıktan sonra görev yöneticisinden ayrıntılar sekmesinde csgo.exe komutuna sağ tık ile öncellik ayarlamadan yüksek seçmeniz ve Windows çalıştır (Windows+r) ile MSConfig ile açılan ekrandan ön yüklemeye gelerek gelişmiş seçenekler bastığınızda işlemci sayısına gelip kaç çekirdekliyse hepsini aktif etmeniz 1.den başlayıp aşağı kadar giden sayı değerini en yükseğini seçip tamama basmanız işinize yarayacaktır park üste verdiğim linkten park Control indirmeniz de lazım.Verdiğim başlatma komutlarını yapıp gerisi sistemin oyuna verdiği FPS değerleriyle uygun performansta en azından iyileşmeleriyle beraber oynayabilirsiniz oyun içi ayarlardan şahit olduğum 4.5 FPS demişler yaklaşık 30-40 FPS Boost yapmıştım üste verdiklerimi de yapmanızı öneririm."
+  ],
+  "atıf": "zynp_msg veri seti sekerlipencere tarafından hazırlanmıştır."
+}
+
+```
 
 ## 📈 Veri Seti Hakkında Analizler
 
@@ -167,13 +184,13 @@ Bu proje Apache 2.0 Lisansı altında lisanslanmıştır. Detaylar için [LICENS
 
 ## 📚 Atıf
 
-Bu veri setini akademik çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gibi atıfta bulunun:
+Bu veri setini çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gibi atıfta bulunun:
 
 ```
-@misc{technoturk2023,
-  author = {Your Name},
-  title = {TechnoTürk: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Forum Veri Seti},
-  year = {2023},
+@misc{zynpdata2023,
+  author = {sekerlipencere},
+  title = {zynpdata: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Forum Veri Seti},
+  year = {2024},
   publisher = {GitHub},
   journal = {GitHub Repository},
   howpublished = {\url{https://github.com/yourusername/technoturk}}
