@@ -40,6 +40,6 @@
 
 ## İletişim
 
-Herhangi bir sorunuz veya öneriniz varsa, lütfen [GitHub Discussions](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest/discussions) bölümünde bizimle iletişime geçin.
+Herhangi bir sorunuz veya öneriniz varsa, lütfen [GitHub Issues](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest/issues) bölümünde bizimle iletişime geçin.
 
 Bu projeyi daha iyi hale getirmek için yardımlarınızı ve işbirliğinizi dört gözle bekliyoruz!
