@@ -13,7 +13,7 @@
 
 Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında zynp_ai tarafından oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
 
-## 🌟 Neden zynpdata?
+## 🌟 Neden sekerlipencere-data?
 
 - **Benzersiz İçerik**: Technopat forumundan elde edilen gerçek insanlar tarafından yazılmış 30'dan fazla katagoride veri içerir.
 - **Geniş Kapsam**: Teknolojiden günlük yaşama kadar çeşitli konuları içerir.
