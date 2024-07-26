@@ -41,7 +41,7 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 ```python
 from datasets import load_dataset
 
-ds = load_dataset("sekerlipencere/zynpdata-zynp_ai-teknofest")
+ds = load_dataset("sekerlipencere/sekerlipenceredata-teknofest")
 ```
 *Pandas Kütüphanesi:*
 ```python
