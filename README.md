@@ -11,7 +11,7 @@
 
 ## 📊 Proje Tanımı
 
-Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında zynp_ai tarafından oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
+Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında sekerlipencere tarafından oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
 
 ## 🌟 Neden sekerlipencere-data?
 
@@ -177,7 +177,7 @@ Veri formatlama aşamasında, JSON formatındaki verilerin JSONL formatına dön
     "Hocam çoklu CPU kullanımını ayarlardan kapattıysanız aktif edince 4 5 FPS artar.",
     "Evet sadece 144 ayarını 60 Hzdir büyük ihtimale monitörün 60 yazabilirsin.Fps_max 0 komutu.Ayarlardan ses ayarlarına gelip gelişmiş 3B ses işlemesi hayır yapıp.800-600 formatına çekip Black bar 4.3 boyutu fark etmez nasıl oynuyorsanız yapabilirsiniz.CS:GO görüntü ayarlarında Uber gölgelendirici kullan komutunu hayır yapmanız öneririm dikey eşitleme FPS'ini sabitler bundan dolayı yüksek FPS değerleri almana mani olur.Oyun açtıktan sonra görev yöneticisinden ayrıntılar sekmesinde csgo.exe komutuna sağ tık ile öncellik ayarlamadan yüksek seçmeniz ve Windows çalıştır (Windows+r) ile MSConfig ile açılan ekrandan ön yüklemeye gelerek gelişmiş seçenekler bastığınızda işlemci sayısına gelip kaç çekirdekliyse hepsini aktif etmeniz 1.den başlayıp aşağı kadar giden sayı değerini en yükseğini seçip tamama basmanız işinize yarayacaktır park üste verdiğim linkten park Control indirmeniz de lazım.Verdiğim başlatma komutlarını yapıp gerisi sistemin oyuna verdiği FPS değerleriyle uygun performansta en azından iyileşmeleriyle beraber oynayabilirsiniz oyun içi ayarlardan şahit olduğum 4.5 FPS demişler yaklaşık 30-40 FPS Boost yapmıştım üste verdiklerimi de yapmanızı öneririm."
   ],
-  "atıf": "zynp_msg veri seti sekerlipencere tarafından hazırlanmıştır."
+  "atıf": "sekerlipencere veri seti sekerlipencere tarafından hazırlanmıştır."
 }
 
 ```
@@ -187,7 +187,7 @@ Veri formatlama aşamasında, JSON formatındaki verilerin JSONL formatına dön
 
 ### 1. Genel Bakış
 
-zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan elde edilmiş, geniş kapsamlı bir Türkçe veri setidir. Bu veri seti, doğal dil işleme, makine öğrenimi ve yapay zeka araştırmaları için zengin bir kaynak sunmaktadır.Özelikle türkçe llm model üretimi ve finetuning edilmesinde eşssiz bir kaynak sağlar.Veri seti her konu için toplam 5 adet veri başlığı içermektedir:
+sekerlipencere veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan elde edilmiş, geniş kapsamlı bir Türkçe veri setidir. Bu veri seti, doğal dil işleme, makine öğrenimi ve yapay zeka araştırmaları için zengin bir kaynak sunmaktadır.Özelikle türkçe llm model üretimi ve finetuning edilmesinde eşssiz bir kaynak sağlar.Veri seti her konu için toplam 5 adet veri başlığı içermektedir:
 - Soru : Kullanıcın konu başlığında yazdığı metin buraya geliyor.
 - Url : Konunun url'si buraya geliyor.
 - Ayrıntılı Soru : Kullanıcının başlığı yazdıktan sonra konuya attığı ayrıntılı soru mesajı buraya geliyor.
@@ -215,7 +215,7 @@ zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan 
 
 ### 3. İçerik Türleri ve Kaynakları
 
-zynpdata veri seti, Technopat forumundan elde edilen çeşitli içerik türlerini kapsamaktadır:
+sekerlipencere veri seti, Technopat forumundan elde edilen çeşitli içerik türlerini kapsamaktadır:
 
 1. Forum Konuları: Kullanıcılar tarafından başlatılan tartışmalar
 2. Cevaplar: Konulara verilen yanıtlar
@@ -226,7 +226,7 @@ zynpdata veri seti, Technopat forumundan elde edilen çeşitli içerik türlerin
 
 ### 4. Konu Dağılımı ve Çeşitliliği
 
-zynpdata veri seti, geniş bir konu yelpazesini kapsamaktadır. Ana kategoriler ve yaklaşık yüzdeleri şu şekildedir:
+sekerlipencere veri seti, geniş bir konu yelpazesini kapsamaktadır. Ana kategoriler ve yaklaşık yüzdeleri şu şekildedir:
 
 1. Donanım (%25)
    - Bilgisayar Bileşenleri
@@ -324,9 +324,9 @@ Bu proje Apache 2.0 Lisansı altında lisanslanmıştır. Detaylar için [LICENS
 Bu veri setini çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gibi atıfta bulunun:
 
 ```
-@misc{zynpdata2024,
+@misc{sekerlipencere2024,
   author = {sekerlipencere},
-  title = {zynpdata: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Forum Veri Seti},
+  title = {sekerlipencere: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Forum Veri Seti},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub Repository},
