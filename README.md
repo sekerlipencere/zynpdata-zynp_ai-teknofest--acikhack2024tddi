@@ -4,14 +4,14 @@
 <img src="https://i.imgur.com/1JQlntm.jpg" alt="zynpdata-zynp_ai-teknofest" width="200" height="200">
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest)
 
 [![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true)
 
 ## 📊 Proje Tanımı
 
-Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
+Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında zynp_ai tarafından oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
 
 ## 🌟 Neden zynpdata?
 
