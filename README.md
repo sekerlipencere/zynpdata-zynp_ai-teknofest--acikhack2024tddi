@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest)
+[![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true)
 
 ## 📊 Proje Tanımı
 
@@ -29,7 +30,9 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 
 ## 🚀 Veri Setini İndirme
 
-[![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://github.com/kullaniciadi/repo/releases/download/v1.0.0/dosya.zip)
+[![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true)
+
+### Yukarıdaki butonu veya [bu bağlantıyı](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true) kullanarak veri setini indirebilirsiniz.
 
 ## 📈 Proje Aşamaları
 ### Proje 3 aşamadan oluşmaktadır, *link toplama*, *İçerik Toplama*, *format düzeltme*:
@@ -166,6 +169,7 @@ zynpdata veri seti, Türkiye'nin en büyük teknoloji forumu olan Technopat'tan 
 - Ayrıntılı Soru : Kullanıcının başlığı yazdıktan sonra konuya attığı ayrıntılı soru mesajı buraya geliyor.
 - Cevaplar : Konuya verilmiş tüm cevaplar bu kısıma geliyor.
 - Atıf : Veri seti ile ilgili atıf buraya geliyor.
+
 
 ### 2. Boyut Ve Genel İstatistikler
 
