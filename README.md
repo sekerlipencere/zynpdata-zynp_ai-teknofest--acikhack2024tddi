@@ -1,7 +1,7 @@
 
-# 🚀 zynpdata-zynp_ai-teknofest: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Veri Seti
+# 🚀 sekerlipencere-teknofest: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Veri Seti
 
-<img src="https://i.imgur.com/1JQlntm.jpg" alt="zynpdata-zynp_ai-teknofest" width="200" height="200">
+<img src="https://i.imgur.com/1JQlntm.jpg" alt="sekerlipencere-teknofest" width="200" height="200">
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -24,7 +24,7 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 ## 💡 Kullanım Alanları
 
 - Türkçe Doğal Dil İşleme (NLP) modellerinin eğitimi:
-- Dil modelleri (LLM) için fine-tuning: Özellikle LLM modellerinin finetunungi için mükemmel doğrulukta saf bilgi sunar.Dil modelleri, doğal dil işleme (NLP) alanında büyük önem taşır ve çeşitli görevler için kullanılabilir. Fine-tuning, bu modellerin belirli bir veri kümesi üzerinde özelleştirilerek performanslarının artırılmasını sağlar. "zynpdata-zynp_ai-teknofest" veri seti, dil modellerinin fine-tuning işlemleri için mükemmel bir kaynak sunar.
+- Dil modelleri (LLM) için fine-tuning: Özellikle LLM modellerinin finetunungi için mükemmel doğrulukta saf bilgi sunar.Dil modelleri, doğal dil işleme (NLP) alanında büyük önem taşır ve çeşitli görevler için kullanılabilir. Fine-tuning, bu modellerin belirli bir veri kümesi üzerinde özelleştirilerek performanslarının artırılmasını sağlar. "sekerlipencere-teknofest" veri seti, dil modellerinin fine-tuning işlemleri için mükemmel bir kaynak sunar.
 - Sentiment analizi ve konu modelleme çalışmaları
 - Türkçe soru-cevap sistemleri geliştirme
 - Sosyal ağ analizi ve kullanıcı davranışı araştırmaları
@@ -47,14 +47,14 @@ ds = load_dataset("sekerlipencere/zynpdata-zynp_ai-teknofest")
 ```python
 import pandas as pd
 
-df = pd.read_json("hf://datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/dataset.jsonl", lines=True)
+df = pd.read_json("hf://datasets/sekerlipencere/sekerlipencere-teknofest/dataset.jsonl", lines=True)
 ```
 *Croissant Kütüphanesi:*
 ```python
 from mlcroissant import Dataset
 
 # The Croissant metadata exposes the first 5GB of this dataset
-ds = Dataset(jsonld="https://huggingface.co/api/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/croissant")
+ds = Dataset(jsonld="https://huggingface.co/api/datasets/sekerlipencere/sekerlipencere-teknofest/croissant")
 records = ds.records("default")
 ```
 
@@ -330,7 +330,7 @@ Bu veri setini çalışmalarınızda kullanıyorsanız, lütfen aşağıdaki gib
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest}}
+  howpublished = {\url{https://github.com/sekerlipencere/sekerlipencere-teknofest}}
 }
 ```
 
@@ -340,4 +340,4 @@ Sorularınız veya geri bildirimleriniz için lütfen [issues](https://github.co
 
 ---
 
-zynpdata-zynp_ai-teknofest ile NLP ve LLM çalışmalarınıza güç katın! 🚀🇹🇷
+sekerlipencere-teknofest ile NLP ve LLM çalışmalarınıza güç katın! 🚀🇹🇷
