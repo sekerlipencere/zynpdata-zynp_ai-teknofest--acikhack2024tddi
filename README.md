@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest)
+
 [![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true)
 
 ## 📊 Proje Tanımı
@@ -33,6 +34,29 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 [![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge&logo=github)](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true)
 
 ### Yukarıdaki butonu veya [bu bağlantıyı](https://huggingface.co/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/resolve/main/dataset.jsonl?download=true) kullanarak veri setini indirebilirsiniz.
+
+#### Veri setini projenize doğrudan dahil etmek için farklı kütüphanelerin nasıl kullanılacağını gösteren aşağıdaki kod örneklerinden faydalanabilirsiniz.
+---
+*Datasets Kütüphanesi:*
+```python
+from datasets import load_dataset
+
+ds = load_dataset("sekerlipencere/zynpdata-zynp_ai-teknofest")
+```
+*Pandas Kütüphanesi:*
+```python
+import pandas as pd
+
+df = pd.read_json("hf://datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/dataset.jsonl", lines=True)
+```
+*Croissant Kütüphanesi:*
+```python
+from mlcroissant import Dataset
+
+# The Croissant metadata exposes the first 5GB of this dataset
+ds = Dataset(jsonld="https://huggingface.co/api/datasets/sekerlipencere/zynpdata-zynp_ai-teknofest/croissant")
+records = ds.records("default")
+```
 
 ## 📈 Proje Aşamaları
 ### Proje 3 aşamadan oluşmaktadır, *link toplama*, *İçerik Toplama*, *format düzeltme*:
