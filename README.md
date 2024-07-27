@@ -1,7 +1,7 @@
 
 # 🚀 zynpdata-zynp_ai-teknofest: Türkiye'nin En Büyük Açık Kaynaklı Türkçe Veri Seti
 
-<img src="https://i.imgur.com/1JQlntm.jpg" alt="zynpdata-zynp_ai-teknofest" width="200" height="200">
+<img src="https://i.imgur.com/1JQlntm.jpg" alt="zynpdata-zynp_ai-teknofest" width="200" height="200"> 
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -12,6 +12,8 @@
 ## 📊 Proje Tanımı
 
 Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok anlık aktiviteye sahip ve en popüler forumu Technopat'tan kazınmış ve Teknofest 2024 Doğal Dil İşleme Yarışması kapsamında zynp_ai tarafından oluşturulmuş, tamamen Türkçe ve açık kaynaklı en büyük veri setidir.Yaklaşık 3 milyon konu ve 21 milyon yanıt içeren 7GB'lık bu veri seti, Türkçe NLP ve LLM projeleri için kapsamlı bir kaynak sağlar.
+- **Takım Adı**: zynp_ai
+- **Başvuru Id**: 2289877
 
 ## 🌟 Neden zynpdata?
 
