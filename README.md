@@ -15,6 +15,7 @@ Türkiye'nin en büyük, en çok indexlenen, en çok üyeye sahip olan, en çok 
 - **Takım Adı**: zynp_ai
 - **Başvuru Id**: 2289877
 - **Sunum**: [İndir](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest/raw/main/zynpdata.pptx)
+- **Demo Video**: [İndir](https://github.com/sekerlipencere/zynpdata-zynp_ai-teknofest/raw/main/Ads%C4%B1z%20tasar%C4%B1m.mp4)
 
 ## 🌟 Neden zynpdata?
 
